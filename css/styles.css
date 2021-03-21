@@ -423,19 +423,21 @@ a {
   margin-left: auto;
   margin-right: auto;
 }
-.icons-thumb {
+.icon-items-link {
   display: flex;
   height: 44px;
   width: 44px;
   justify-content: center;
   align-items: center;
   border-radius: 50%;
+  background-color: #fff;
 }
+
 .team-icons {
   fill: var(--primary-text-color);
 }
-.icon-items-link:focus .icons-thumb,
-.icon-items-link:hover .icons-thumb,
+.icon-items-link:focus,
+.icon-items-link:hover,
 .icon-items-link:focus .team-icons,
 .icon-items-link:hover .team-icons {
   fill: var(--secondary-accent-color);
