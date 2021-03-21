@@ -84,6 +84,7 @@ a {
   width: 100%;
   height: 4px;
   background-color: var(--accent-color);
+  border-radius: 2px;
 }
 
 .main-nav-link:hover,
@@ -99,6 +100,8 @@ a {
   letter-spacing: 0.02em;
   display: flex;
   align-items: center;
+  color: #757575;
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .auth-nav-link:hover .auth-icon,
@@ -196,6 +199,9 @@ a {
   outline-style: none;
   border-width: 2px;
   border-color: transparent;
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  cursor: pointer;
 }
 
 .hero-btn:hover,
@@ -418,7 +424,7 @@ a {
   margin-bottom: 16px;
 }
 
-.team .icon-list {
+.team {
   display: flex;
   margin-left: auto;
   margin-right: auto;
@@ -430,9 +436,14 @@ a {
   justify-content: center;
   align-items: center;
   border-radius: 50%;
-  background-color: #fff;
+  color: #fff;
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-
+.icon-list {
+  display: flex;
+  align-content: center;
+  justify-content: space-between;
+}
 .team-icons {
   fill: var(--primary-text-color);
 }
@@ -569,6 +580,9 @@ a {
   outline: none;
   border-width: 2px;
   border-color: transparent;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .filter-button:hover,
