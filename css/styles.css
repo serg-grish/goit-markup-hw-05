@@ -445,14 +445,12 @@ img {
 }
 .icon-items-link {
   display: flex;
-
   justify-content: center;
   align-items: center;
   width: 44px;
   height: 44px;
   border-radius: 50%;
   color: var(--partner-icon);
-  background-color: var(--secondary-accent-color);
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
@@ -587,10 +585,6 @@ img {
 .social-list-item-footer:not(:last-child) {
   margin-right: 10px;
 }
-
-.social-footer-list-icon {
-  fill: var(--secondary-accent-color);
-}
 .social-list-link-footer {
   display: flex;
   justify-content: center;
@@ -601,6 +595,10 @@ img {
   background: rgba(255, 255, 255, 0.1);
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
+.social-footer-list-icon {
+  fill: var(--secondary-accent-color);
+}
+
 .social-list-link-footer:focus,
 .social-list-link-footer:hover {
   background-color: var(--accent-color);
